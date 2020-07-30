@@ -11,11 +11,11 @@ import psycopg2
 
 class oldRisingDatabase():
     def loginMysql(self):
-        self = MySQLdb.connect(host="10.26.31.128",
+        self = MySQLdb.connect(host="",
                                port=3306,
-                               user="fuxingyu",
-                               password="syylfml1685",
-                               db="risingdata",
+                               user="",
+                               password="",
+                               db="",
                                charset='utf8mb4')
         print("SQL数据库 连接成功！")
         return self
@@ -23,10 +23,10 @@ class oldRisingDatabase():
 
 class newRisingDatabase():
     def loginPgSQL(self):
-        self = psycopg2.connect(database="rising_data",
-                                user="fuxingyu",
-                                password="risingdata",
-                                host="10.26.31.128",
+        self = psycopg2.connect(database="",
+                                user="",
+                                password="",
+                                host="",
                                 port="5432")
         print("postgreSQL数据库 连接成功！")
         return self
